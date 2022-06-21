@@ -2,7 +2,7 @@
 
 Takes the following:
 
-```
+```haskell
 {-# OPTIONS_GHC -fplugin=Puffnfresh.GHC.Plugin.Lens #-}
 
 data X = X
@@ -14,7 +14,7 @@ data Z a = Z1 a Int | Z2 Char
 
 And generates:
 
-```
+```haskell
 _X :: Iso' X ()
 
 _Y1 :: Prism' Y ()
