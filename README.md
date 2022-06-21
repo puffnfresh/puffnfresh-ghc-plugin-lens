@@ -20,6 +20,6 @@ _X :: Iso' X ()
 _Y1 :: Prism' Y ()
 _Y2 :: Prism' Y Int
 
-_Z1 :: Prism' Z (a, Int)
-_Z2 :: Prism' Z Char
+_Z1 :: Prism' (Z a) (a, Int)
+_Z2 :: Prism' (Z a) Char
 ```
